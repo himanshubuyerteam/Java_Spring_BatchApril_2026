@@ -7,62 +7,59 @@ class Person
     int m2;
     int m3;
     String address;
-
-    Person(Person p)
-    {
-        this.id=p.id;
-        this.name=p.name;
-        this.emailId=p.emailId;
-        this.address=p.address;
+    public String getName() {
+        return name;
     }
-    Person(String name,int id,String emailId,String address){
-        this.id=id;
-        this.name=name;
-        this.emailId=emailId;
-        this.address=address;
+    public void setName(String name) {
+        this.name = name;
     }
-    void setMarksM1(int m1)
-    {
-        this.m1=m1;
+    public int getId() {
+        return id;
     }
-    void setMarksM2(int m2)
-    {
-        this.m2=m2;
+    public void setId(int id) {
+        this.id = id;
     }
-    void setMarksM3(int m3)
-    {
-        this.m3=m3;
-    }
-    String getEmail()
-    {
+    public String getEmailId() {
         return emailId;
     }
-    int getM1Marks()
-    {
+    public void setEmailId(String emailId) {
+        this.emailId = emailId;
+    }
+    public int getM1() {
         return m1;
     }
-    void print()
-    {
-        System.out.println("Thanks for Calling Print Function");
-        System.out.println("Id of the person is "+id);
-        System.out.println("Name of the person is "+name);
-        System.out.println("EmailId of the person is "+emailId);
-        System.out.println("Address of the person is "+address);
+    public void setM1(int m1) {
+        this.m1 = m1;
     }
-    int totalMarks()
-    {
-        return m1+m2+m3;
+    public int getM2() {
+        return m2;
     }
+    public void setM2(int m2) {
+        this.m2 = m2;
+    }
+    public int getM3() {
+        return m3;
+    }
+    public void setM3(int m3) {
+        this.m3 = m3;
+    }
+    public String getAddress() {
+        return address;
+    }
+    public void setAddress(String address) {
+        this.address = address;
+    }
+    
+
+    
 }
 public class OOPs1 {
     public static void main(String[] args) {
-        Person p1 = new Person("Aryan",1,"Aryan@123","Delhi");
-        p1.print();
-        p1.setMarksM1(10);
-        p1.setMarksM2(20);
-        p1.setMarksM3(30);
-        p1.m1=20;
-        System.out.println(p1.totalMarks());
+        Person p1=new Person();
+        p1.setM1Marks(10);
+        System.out.println(p1.m1);
+        p1.setId(100);
+        System.out.println(p1.id);
        
 
     }
