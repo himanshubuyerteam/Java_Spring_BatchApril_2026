@@ -3,6 +3,7 @@ class BankAccount
     private int balance;
     int id;
     String name;
+    private int bonusPoint;
 
     void depoist(int amt)
     {
@@ -17,6 +18,11 @@ class BankAccount
         }
         balance= balance-amt;
     }
+    private void calculateBonus()
+    {
+        if(balance>5000000)
+            bonusPoint=100;
+    }
     
 }
 public class Banking {
@@ -24,6 +30,7 @@ public class Banking {
         BankAccount ba1 = new BankAccount();
         ba1.depoist(500);
         ba1.withdraw(5000);
+        ba1.calculateBonus();
         
     }
 }
