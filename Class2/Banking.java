@@ -1,3 +1,4 @@
+package Class2;
 class BankAccount
 {
     private int balance;

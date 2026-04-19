@@ -1,3 +1,4 @@
+package Class2;
 class vehicle
 {
     void run()
