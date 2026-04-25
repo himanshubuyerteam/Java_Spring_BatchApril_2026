@@ -53,6 +53,8 @@ interface MusicSystem
 public class LearnInterface_Good {
     public static void main(String[] args) {
         SonyMusicSystem sms =new SonyMusicSystem();
+        MusicSystem smc=new SonyMusicSystem();
+        // MusicSystem obj = new MusicSystem();
         BoatMusicSystem bms = new BoatMusicSystem();
         Car cobj = new Car(sms);
         cobj.play();
